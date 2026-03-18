@@ -1,0 +1,4 @@
+google-cloud-logging
+google-auth
+google-adk
+python-dotenv
