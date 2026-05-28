@@ -60,7 +60,7 @@ GCP_PROJECT=your-gcp-project-id
 You can load and execute the agent directly via the ADK CLI or by running the script locally to view initialization properties:
 
 ```bash
-python agent.py
+adk web --port 8000
 ```
 
 When interacting with the agent (e.g., passing it input strings), you can ask naturally for what you need:
