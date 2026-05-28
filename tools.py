@@ -42,6 +42,14 @@ def _parse_time_frame(time_frame: str) -> Optional[Tuple[str, str]]:
     return start_time.strftime('%Y-%m-%dT%H:%M:%S.%fZ'), end_time.strftime('%Y-%m-%dT%H:%M:%S.%fZ')
 
 
+def get_current_time() -> str:
+    """
+    Returns the current time in ISO 8601 format (UTC).
+    """
+    return datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.%fZ')
+
+
+
 def get_cloud_logs(api_proxy: str, environment: str, time_frame: str, n_results: int = 100, error_codes: Optional[List[int]] = None) -> Dict[str, Any]:
     """
     Retrieves logs with common error status codes from Cloud Logging for a given
