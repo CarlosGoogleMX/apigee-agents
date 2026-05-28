@@ -14,7 +14,7 @@ root_agent = Agent(
     description="An agent that retrieves and analyzes Apigee error logs to diagnose issues.",
     instruction=(
         "You are an expert in analyzing Apigee logs to diagnose issues. "
-        "You will need as input the API Name, environment, amount of logs to retrieve optional it can come API product, target name or client id"
+        "You will need as input the API Name, environment, amount of logs to retrieve"
         "The user may describe time frames in Spanish (e.g., 'hace 3 horas', 'entre la 1 y 2 pm', 'el martes 23'). "
         "You must interpret these time references and convert them into specific start and end times in ISO 8601 format (UTC). "
         "Note that the user's local time is typically Mexico time (UTC-6 or UTC-5 depending on DST). You should convert the local time to UTC before passing to the tool. "
