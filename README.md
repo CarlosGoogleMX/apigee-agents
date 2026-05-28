@@ -4,7 +4,7 @@ This repository contains an AI-powered agent built using the Google Agent Develo
 
 ## Features
 
-- **AI-Powered Analysis:** Leverages `gemini-3-flash-preview` to identify complex issue patterns (e.g. error code spikes, recurring problematic IPs).
+- **AI-Powered Analysis:** Leverages `gemini-3.5-flash` to identify complex issue patterns (e.g. error code spikes, recurring problematic IPs).
 - **Dynamic Logging Filters:** Retrieve logs filtering by specific criteria:
   - Up to two API Proxies
   - API Product
