@@ -8,7 +8,7 @@ from .tools import get_cloud_logs, get_current_time
 load_dotenv()
 
 root_agent = Agent(
-    model='gemini-3.1-pro-preview',
+    model='gemini-3.5-flash',
     tools=[get_cloud_logs, get_current_time],
     name='root_agent',
     description="An agent that retrieves and analyzes Apigee error logs to diagnose issues.",
