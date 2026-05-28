@@ -31,6 +31,7 @@ If a human-readable string is provided, it will be converted to a time range wit
 1.  **Set up environment variables:**
     Create a `.env` file in the root of the project and add the following variables:
     ```
+    GOOGLE_API_KEY=<your_api_key>
     OAUTH_TOKEN=<your_oauth_token>
     GCP_PROJECT=<your_gcp_project_id>
     ```
