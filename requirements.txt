@@ -1,4 +1,8 @@
-google-cloud-logging
-google-auth
-google-adk
-python-dotenv
+google-adk>=2.6.0
+google-cloud-logging>=3.11.0
+google-auth>=2.32.0
+python-dotenv>=1.0.1
+requests>=2.32.0
+pydantic>=2.0.0
+uvicorn>=0.30.0
+fastapi>=0.110.0

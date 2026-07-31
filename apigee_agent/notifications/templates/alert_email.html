@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Apigee Alerta de Error - {proxy_name}</title>
+</head>
+<body style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #f4f7f6; margin: 0; padding: 20px;">
+    <div style="max-width: 650px; background-color: #ffffff; margin: 0 auto; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-top: 5px solid #0050FF;">
+        <div style="background-color: #0050FF; padding: 20px; text-align: center;">
+            <img src="{logo_url}" alt="Logo" style="height: 50px; display: inline-block;">
+            <h1 style="color: #ffffff; margin: 15px 0 0 0; font-size: 22px; font-weight: 500;">Alerta de Diagnóstico de Error</h1>
+        </div>
+        
+        <div style="padding: 30px;">
+            <p style="font-size: 16px; color: #333333; line-height: 1.6;">
+                Estimado/a Equipo del Proxy,
+            </p>
+            <p style="font-size: 15px; color: #555555; line-height: 1.6;">
+                Hemos detectado y diagnosticado errores recurrentes en el proxy de API <strong>{proxy_name}</strong>.
+            </p>
+            <p style="font-size: 14px; color: #777777;">
+                Destinatario: {recipient_email}
+            </p>
+            
+            <div style="background-color: #f9f9f9; border-left: 4px solid #d9534f; padding: 15px; margin: 20px 0; border-radius: 4px;">
+                <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #d9534f;">Resumen del Diagnóstico:</h3>
+                <p style="margin: 0; font-size: 14px; color: #555555; line-height: 1.5;">{error_summary}</p>
+            </div>
+            
+            <h3 style="color: #333333; font-size: 15px; margin-top: 25px;">Detalle de Registros de Falla:</h3>
+            <table style="width: 100%; border-collapse: collapse; margin-top: 10px; text-align: left;">
+                <thead>
+                    <tr style="background-color: #f5f5f5;">
+                        <th style="padding: 10px; border-bottom: 2px solid #ddd; font-size: 13px; color: #333;">Timestamp (UTC)</th>
+                        <th style="padding: 10px; border-bottom: 2px solid #ddd; font-size: 13px; color: #333;">Estado</th>
+                        <th style="padding: 10px; border-bottom: 2px solid #ddd; font-size: 13px; color: #333;">IP Cliente</th>
+                        <th style="padding: 10px; border-bottom: 2px solid #ddd; font-size: 13px; color: #333;">Detalle/Mensaje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {table_rows}
+                </tbody>
+            </table>
+            
+            <p style="font-size: 12px; color: #999999; margin-top: 30px; border-top: 1px solid #eee; padding-top: 15px; line-height: 1.4;">
+                Este es un correo automático generado por {company_name}. Por favor no responder directamente a este mensaje.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,3 @@
+"""
+Catalogue lookup domain service.
+"""

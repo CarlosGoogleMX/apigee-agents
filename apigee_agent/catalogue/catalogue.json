@@ -1,0 +1,26 @@
+{
+  "onboarding": {
+    "apiProxy": "onboarding-v1-proxy",
+    "apiProduct": "onboarding-product",
+    "environment": "prod",
+    "description": "API Proxy for user registration and onboarding workflow"
+  },
+  "billing": {
+    "apiProxy": "billing-v2-proxy",
+    "apiProduct": "billing-product",
+    "environment": "prod",
+    "description": "API Proxy for customer billing, invoice queries, and receipts"
+  },
+  "payments": {
+    "apiProxy": "payments-gateway-proxy",
+    "apiProduct": "payments-product",
+    "environment": "prod",
+    "description": "API Proxy for online payment processing and transactions"
+  },
+  "authentication": {
+    "apiProxy": "auth-oauth-v1-proxy",
+    "apiProduct": "auth-product",
+    "environment": "prod",
+    "description": "API Proxy for OAuth/JWT token issuance and validation"
+  }
+}
